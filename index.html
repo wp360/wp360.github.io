@@ -1,94 +1,111 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://cdn.bootcss.com/react/15.2.1/react.min.js"></script>
-        <script src="https://cdn.bootcss.com/react/15.2.1/react-dom.min.js"></script>
-        <script src="https://cdn.bootcss.com/babel-core/5.8.35/browser.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Building the Note Board</title>
-    </head>
-    <body>
-        <div id='react-container'></div>
-        <script type="text/babel">
-        var Note = React.createClass({
-            getInitialState() {
-                return {editing: false}
-            },
-            edit() {
-                this.setState({editing: true})
-            },
-            save() {
-                var val = this.refs.newText.value
-                alert('Later we will save this value: ' + val)
-                this.setState({editing: false})
-            },
-            remove() {
-                alert("Removing Note")
-            },
-            renderForm() {
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人主页（单页应用）</title>
+    <script src="https://cdn.bootcss.com/react/15.2.1/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.2.1/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-core/5.8.35/browser.min.js"></script>
+    <script src="https://cdn.bootcss.com/react-router/2.8.0/ReactRouter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    <script type="text/babel">
+        var {
+            Router,
+            Route,
+            IndexRoute,
+            IndexLink,
+            Link,
+            hashHistory
+        } = ReactRouter;
+        var destination = document.querySelector("#container");
+        var Home = React.createClass({
+            render: function(){
                 return (
-                    <div className="note">
-                      <textarea ref="newText"></textarea>
-                      <button onClick={this.save}>SAVE</button>
+                    <div>
+                        <h2>个人介绍</h2>
+                        <ul>
+                            <li>1、 本人个性随和，谦虚自律，勤奋好学，对工作认真负责，注重效率，有较强的团队合作意识。</li>
+                            <li>2、 工作上熟悉 HTML/HTML5、CSS/CSS3、JavaScript、Jquery、BootStrap框架等前端 WEB 开发技术。</li>
+                            <li>3、 平时热爱IT技术，经常登陆慕课网、udemy、lynda、packt等进行相关课程学习。</li>
+                            <li>4、 对于NodeJS、Express、MongoDB、ReactJS、Angular、ionic、PHP、git等皆有涉猎。</li>
+                            <li>5、 熟练使用Photoshop等软件。掌握Office 办公软件以及需求文档的编写。</li>
+                        </ul>
+                    </div>
+                );
+            }
+        });
+        var Works = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                        <h2>往期案例</h2>
+                        <ul>
+                            <li>1、 响应单页（PC页面）<a href="http://sz.xingjiezs.com/2016/topic/" alt="响应式" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>2、 日常活动（PC页面）<a href="http://nb.xingjiezs.com/2017/08/" alt="日常活动" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>3、 专题页面（PC页面）<a href="http://sz.xingjiezs.com/2017/jdy/" alt="专题页面" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>4、 微信报名（移动页面）<a href="http://www.xingjiesj.com/lfwx/" alt="微信报名" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>5、 翻书效果（移动页面）<a href="http://tj.xingjiezs.com/2017/06/phone/" alt="翻书效果" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>6、 网上投票（移动页面）<a href="http://www.xingjiezs.com/2016/toupiao3/phone.php" alt="网上投票" target="_blank" rel="nofollow">链接地址</a></li>
+                        </ul>
+                    </div>
+                );
+            }
+        });
+        var Plan = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                        <h2>学习计划</h2>
+                        <ul>
+                            <li>1、 React入门与实战 （已完成）<a href="https://github.com/wp360/react-news" alt="React入门与实战" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>2、 React-Redux CRUD （已完成）<a href="https://github.com/wp360/redux-crud" alt="React-Redux 增删改查" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>3、 ES6彩票 （未完成）<a href="https://github.com/wp360/es6" alt="ES6彩票" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>4、 NodeJS仿亚马逊 （未完成）<a href="https://github.com/wp360/ecommerce" alt="NodeJS仿亚马逊" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>5、 Angular4 在线竞拍（未完成）<a href="https://github.com/wp360/auction" alt="Angular4 在线竞拍" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>6、 ionic & WooCommerce 构建购物商城APP（未完成）<a href="https://github.com/wp360/wooApp" alt="ionic商城app" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>7、 React 构建Spotify App Demo （未完成）<a href="https://github.com/wp360/spotifyApp" alt="Spotify App" target="_blank" rel="nofollow">链接地址</a></li>
+                            <li>8、 手把手开发电商平台 （计划中准备中...）</li>
+                            <li>9、 React大众点评开发 （计划中准备中...）</li>
+                            <li>10、React Native （计划中准备中...）</li>
+                            <li>其他 （Vue.js、PHP、Three.js...）</li>
+                        </ul>
+                    </div>
+                );
+            }
+        });
+        var App = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                        <h1>个人主页</h1>
+                        <ul className="header">
+                            <li><IndexLink activeClassName="active" to="/">首页</IndexLink></li>
+                            <li><Link activeClassName="active" to="/works">作品</Link></li>
+                            <li><Link activeClassName="active" to="/plan">规划</Link></li>
+                        </ul>
+                        <div className="content">
+                            {this.props.children}
+                        </div>
                     </div>
                 )
-            },
-            renderDisplay() {
-                return ( 
-                    <div className="note">
-                        <p>{this.props.children}</p>
-                        <span>
-                          <button onClick={this.edit}>EDIT</button>
-                          <button onClick={this.remove}>X</button>
-                        </span>
-                    </div>
-                    )
-            },
-            render() {
-              return (this.state.editing) ? this.renderForm()
-                                          : this.renderDisplay()
-
             }
-        })
-
-        var Board = React.createClass({
-            propTypes: {
-                count: function(props, propName) {
-                    if(typeof props[propName] !== "number") {
-                        return new Error("the count must be a number")
-                    } 
-
-                    if(props[propName] > 100) {
-                        return new Error('Creating ' + props[propName] + ' notes is ridiculous')
-                    }
-                }
-            },
-            getInitialState() {
-                return {
-                    notes: [
-                      'Call Bob',
-                      'Email Sarah',
-                      'Eat lunch',
-                      'Finish proposal'
-                    ]
-                }
-            },
-
-            render() {
-                return (<div className='board'>
-                    {this.state.notes.map((note, i) => {
-                        return <Note key={i}>{note}</Note>
-                    })}
-                    </div>)
-            }
-        })
-        
-        ReactDOM.render(<Board count={10}/>, 
-            document.getElementById('react-container'))
-
-        </script>
-    </body>
+        });
+        ReactDOM.render(
+            <Router history={hashHistory}>
+                <Route path="/" component={App}>
+                    <IndexRoute component={Home} />
+                    <Route path="works" component={Works} />
+                    <Route path="plan" component={Plan} />
+                </Route>
+            </Router>,destination
+        );
+    </script>
+</body>
 </html>
-
-
-
