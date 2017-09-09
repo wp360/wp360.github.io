@@ -1,68 +1,46 @@
-body,
-html,
-div.board,
-div#react-container {
-  height: 100%;
-  overflow: hidden;
+body{
+    background-color: #ffcc00;
+    padding: 0;
+    margin: 0;
 }
-
-body {
-  margin: 0;
-  padding: 0;
+h1,h2,p,ul,li{
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-div.board {
-  background-color: 'brown';
-  width: 100%;
-  background: #eab92d;
+#container{
+    width: 90%;
+    padding: 0 5%;
 }
-
-div.note {
-  height: 150px;
-  width: 150px;
-  background-color: yellow;
-  margin: 2px 0;
-  position: relative;
-  cursor: -webkit-grab;
-  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
-  overflow: hidden;
+ul.header{
+    background-color: #111;
+    padding: 0;
 }
-
-div.note:active {
-  cursor: -webkit-grabbing;
+ul.header li {
+    display: inline;
+    list-style-type: none;
 }
-
-div.note p {
-  margin: 0;
-  font-size: 22px;
-  padding: 5px;
-  font-family: "Microsoft YaHei", Arial;
+ul.header li a{
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none; 
 }
-
-div.note:hover > span {
-  opacity: 1;
+ul.header li a.active{
+    background-color: #0099FF;
 }
-
-div.note > span {
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  opacity: 0;
-  transition: opacity .25s linear;
+.content{
+    background-color: #fff;
+    padding: 20px;
 }
-
-div.note button {
-  margin: 2px;
+.content h2{
+    padding: 0;
+    margin: 0;
 }
-
-div.note > textarea {
-  height: 75%;
-  background: rgba(255, 255, 255, .5);
+.content li{
+    list-style-type: none;
+    margin-bottom: 10px;
 }
-
-.board > button {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5em;
-}''
+.content li a{
+    display: inline-block;
+    margin-left: 20px;
+}
