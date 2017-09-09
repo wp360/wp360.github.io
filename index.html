@@ -22,7 +22,7 @@
             IndexRoute,
             IndexLink,
             Link,
-            hashHistory
+            browserHistory
         } = ReactRouter;
         var destination = document.querySelector("#container");
         var Home = React.createClass({
@@ -98,7 +98,7 @@
             }
         });
         ReactDOM.render(
-            <Router history={hashHistory}>
+            <Router history={browserHistory}>
                 <Route path="/" component={App}>
                     <IndexRoute component={Home} />
                     <Route path="works" component={Works} />
