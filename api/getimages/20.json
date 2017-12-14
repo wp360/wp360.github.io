@@ -4,14 +4,14 @@
         {
             "id": 51,
             "title": "落落星辰 三人沙发",
-            img_url: "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_001_1508133710018214.jpg",
-            zhaiyao: "<h2>商品简历</h2><p>有品质的生活，不是挥金如土，奢侈无度，而是遵循内心深处的渴望，回归自我。</p><h3>信息</h3><p><span>颜色：</span>晨暮浅灰</p><p><span>材质：</span>桦木框架+P2多层板+弓簧+海绵+布艺</p>"
+            "img_url": "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_001_1508133710018214.jpg",
+            "zhaiyao": "<h2>商品简历</h2><p>有品质的生活，不是挥金如土，奢侈无度，而是遵循内心深处的渴望，回归自我。</p><h3>信息</h3><p><span>颜色：</span>晨暮浅灰</p><p><span>材质：</span>桦木框架+P2多层板+弓簧+海绵+布艺</p>"
         },
         {
             "id": 52,
             "title": "折叠城市 餐椅",
-            img_url: "http://image.zeststore.com/Z30DC01/RM_IMAGE/Z30DC01_RM_001_1510114803574475.jpg",
-            zhaiyao: "<h2>商品简历</h2><p>印象灰漆面颜色配合木材原生纹理，呈现内敛气质。椅背设计精巧别致，巧妙运用弯曲木皮与银色金属杆，诠释编织艺术。</p><h3>信息</h3><p><span>颜色：</span>印象灰+棋盘黑白</p><p><span>材质：</span>桦木+枫木皮+环保人造板</p>"
+            "img_url": "http://image.zeststore.com/Z30DC01/RM_IMAGE/Z30DC01_RM_001_1510114803574475.jpg",
+            "zhaiyao": "<h2>商品简历</h2><p>印象灰漆面颜色配合木材原生纹理，呈现内敛气质。椅背设计精巧别致，巧妙运用弯曲木皮与银色金属杆，诠释编织艺术。</p><h3>信息</h3><p><span>颜色：</span>印象灰+棋盘黑白</p><p><span>材质：</span>桦木+枫木皮+环保人造板</p>"
         }
     ]
 }
