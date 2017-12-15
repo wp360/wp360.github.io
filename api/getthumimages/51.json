@@ -2,16 +2,16 @@
     "status": 0,
     "message": [
         {
-            "src": "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_003_1508133710018214.jpg"
+            src: "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_003_1508133710018214.jpg"
         },
         {
-            "src": "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_004_1508133710018214.jpg"
+            src: "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_004_1508133710018214.jpg"
         },
         {
-            "src": "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_005_1508133710018214.jpg"
+            src: "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_005_1508133710018214.jpg"
         },
         {
-            "src": "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_006_1508133710018214.jpg"
+            src: "http://image.zeststore.com/Z31SF01/RM_IMAGE/Z31SF01_RM_006_1508133710018214.jpg"
         }
     ]
 }
