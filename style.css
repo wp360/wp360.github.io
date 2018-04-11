@@ -8,7 +8,7 @@ h1,h2,p,ul,li{
 }
 #container{
   width: 90%;
-  padding: 5%;
+  padding: 0 5%;
 }
 ul.header{
   background-color: #111;
@@ -31,7 +31,7 @@ ul.header li a.active{
 .content{
   background-color: #fff;
   width: 100%;
-  padding: 0 5%;
+  padding: 5%;
   float: left;
 }
 .content h2{
