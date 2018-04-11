@@ -9,6 +9,8 @@
     <script src="https://cdn.bootcss.com/react/15.2.1/react-dom.min.js"></script>
     <script src="https://cdn.bootcss.com/babel-core/5.8.35/browser.min.js"></script>
     <script src="https://cdn.bootcss.com/react-router/2.8.0/ReactRouter.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--[if lte IE 8]>
     <p class="browserupgrade">您的浏览器版本过低，不支持相关新特性, 请到 <a href="http://browsehappy.com/">这里</a> 更新, 以获取最佳的体验</p>
@@ -30,34 +32,72 @@
             render: function(){
                 return (
                     <div>
-                        <h2>个人介绍</h2>
-                        <ul>
-                            <li>1、 本人个性随和，谦虚自律，勤奋好学，对工作认真负责，注重效率，有较强的团队合作意识。</li>
-                            <li>2、 熟悉 HTML/HTML5、CSS/CSS3、JavaScript、Jquery、BootStrap框架等前端 WEB 开发技术。</li>
-                            <li>3、 可以使用织梦、WordPress等构建网站，以及后台管理、专题制作。</li>
-                            <li>4、 熟悉H5移动页面制作，对于H5移动混合开发也有所了解。</li>
-                            <li>5、 对于Vue 2.0、git、NodeJS、Express、MongoDB、PHP、ReactJS、Angular、ionic2/3等皆有涉猎。</li>
-                            <li>6、 熟练使用Photoshop等软件。掌握Office 办公软件以及需求文档的编写。</li>
-                            <li>平时热爱IT技术，经常登录慕课网、udemy、lynda、packt等进行相关课程学习。</li>
-                        </ul>
-                    </div>
-                );
-            }
-        });
-        var Works = React.createClass({
-            render: function(){
-                return (
-                    <div>
                         <h2>往期案例</h2>
-                        <ul>
-                            <li>1、 响应页面（PC页面）<a href="http://sz.xingjiezs.com/2016/topic/" alt="响应式" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>2、 日常活动（PC页面）<a href="http://nb.xingjiezs.com/2017/08/" alt="日常活动" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>3、 专题页面（PC页面）<a href="http://sz.xingjiezs.com/2017/jdy/" alt="专题页面" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>4、 微信报名（移动页面）<a href="http://www.xingjiesj.com/lfwx/" alt="微信报名" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>5、 翻书效果（移动页面）<a href="http://tj.xingjiezs.com/2017/06/phone/" alt="翻书效果" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>6、 网上投票（移动页面）<a href="http://www.xingjiezs.com/2016/toupiao3/phone.php" alt="网上投票" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>其他详见集团及各个分公司官网活动专题展示</li>
-                        </ul>
+                        <div className="show-grid">
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>响应页面（PC页面）</h3>
+                            <p>    
+                              <a href="http://sz.xingjiezs.com/2016/topic/" class="thumbnail">
+                                苏州星杰响应式页面
+                              </a>
+                            </p>
+                            <p>相关技术：Bootstrap + JQuery + Ajax</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>日常活动（PC页面）</h3>
+                            <p>    
+                              <a href="http://nb.xingjiezs.com/2017/08/" class="thumbnail">
+                                墅无极——中国别墅装饰实景体验展（星杰宁波）
+                              </a>
+                            </p>
+                            <p>相关技术：Bootstrap + JQuery + 相关jq插件</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>专题页面（PC页面）</h3>
+                            <p>    
+                              <a href="http://sz.xingjiezs.com/2017/jdy/" class="thumbnail">
+                                金大元御珑宫廷——苏州星杰楼盘专题
+                              </a>
+                            </p>
+                            <p>相关技术：Bootstrap + JQuery + 相关jq插件</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>微信报名（移动页面）</h3>
+                            <p>
+                              <a href="http://www.xingjiesj.com/lfwx/" className="thumbnail">
+                                <img src="images/01.jpg" alt="二维码" />
+                              </a>
+                            </p>
+                            <p>相关技术：JQuery + Swiper</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>翻书效果（移动页面）</h3>
+                            <p>
+                              <a href="http://tj.xingjiezs.com/2017/06/phone/" className="thumbnail">
+                                <img src="images/02.jpg" alt="二维码" />
+                              </a>
+                            </p>
+                            <p>相关技术：JQuery + 相关js插件</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>网上投票（移动页面）</h3>
+                            <p>
+                              <a href="http://www.xingjiezs.com/2016/toupiao3/phone.php" className="thumbnail">
+                                <img src="images/03.jpg" alt="二维码" />
+                              </a>
+                            </p>
+                            <p>相关技术：PHP + JQuery + Ajax</p>
+                          </div>
+                        </div>
+                        <h3>备注：</h3>
+                        <p>其中，有不少活动专题已经下线。近期使用Vue2.0开发的红包牛牛APP，由于还未上线。所以就不在此展示了。</p>
+                        <p>其他详见集团及各个分公司官网活动专题展示</p>
                     </div>
                 );
             }
@@ -65,25 +105,49 @@
         var Plan = React.createClass({
             render: function(){
                 return (
+                  <div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">项目开发</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Vue2.0-快餐店收银系统 （完成基础构建）<a href="https://github.com/wp360/VuePos" alt="快餐店收银系统" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">Vue 2.0应用开发实例 （完成部分）<a href="https://github.com/wp360/vueApp" alt="Vue 2.0应用开发实例" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">使用Vue.js 2.0 构建去购物网站（进行中...）<a href="https://github.com/wp360/vueMall" alt="Vue.js 2.0 构建去购物网站" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">WEEX （准备中...）</li>
+                        <li class="list-group-item">React入门与实战 （已完成）<a href="https://github.com/wp360/react-news" alt="React入门与实战" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">React-Redux CRUD （已完成）<a href="https://github.com/wp360/redux-crud" alt="React-Redux 增删改查" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">ES6彩票 （完成部分）<a href="https://github.com/wp360/es6" alt="ES6彩票" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">NodeJS仿亚马逊 （完成部分）<a href="https://github.com/wp360/ecommerce" alt="NodeJS仿亚马逊" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">Angular4 在线竞拍（完成部分）<a href="https://github.com/wp360/auction" alt="Angular4 在线竞拍" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">ionic & WooCommerce 构建购物商城APP（初始阶段）<a href="https://github.com/wp360/wooApp" alt="ionic商城app" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">React 构建Spotify App Demo （初始阶段）<a href="https://github.com/wp360/spotifyApp" alt="Spotify App" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li class="list-group-item">手把手开发电商平台 （进行中...）</li>
+                        <li class="list-group-item">React大众点评开发 （准备中...）</li>
+                        <li class="list-group-item">React Native （准备中...）</li>
+                        <li class="list-group-item">其他 （ThinkPHP、Three.js...）</li>
+                      </ul>
+                    </div>
+                  </div>
+                );
+            }
+        });
+        var Mine = React.createClass({
+            render: function(){
+                return (
                     <div>
-                        <h2>项目开发</h2>
-                        <ul>
-                            <li>1、 Vue2.0-快餐店收银系统 （完成基础构建）<a href="https://github.com/wp360/VuePos" alt="快餐店收银系统" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>2、 Vue 2.0应用开发实例 （完成部分）<a href="https://github.com/wp360/vueApp" alt="Vue 2.0应用开发实例" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>3、 使用Vue.js 2.0 构建去购物网站（进行中...）<a href="https://github.com/wp360/vueMall" alt="Vue.js 2.0 构建去购物网站" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>4、 WEEX （准备中...）</li>
-                            <li>5、 React入门与实战 （已完成）<a href="https://github.com/wp360/react-news" alt="React入门与实战" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>6、 React-Redux CRUD （已完成）<a href="https://github.com/wp360/redux-crud" alt="React-Redux 增删改查" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>7、 ES6彩票 （完成部分）<a href="https://github.com/wp360/es6" alt="ES6彩票" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>8、 NodeJS仿亚马逊 （完成部分）<a href="https://github.com/wp360/ecommerce" alt="NodeJS仿亚马逊" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>9、 Angular4 在线竞拍（完成部分）<a href="https://github.com/wp360/auction" alt="Angular4 在线竞拍" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>10、ionic & WooCommerce 构建购物商城APP（初始阶段）<a href="https://github.com/wp360/wooApp" alt="ionic商城app" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>11、React 构建Spotify App Demo （初始阶段）<a href="https://github.com/wp360/spotifyApp" alt="Spotify App" target="_blank" rel="nofollow">链接地址</a></li>
-                            <li>12、手把手开发电商平台 （进行中...）</li>
-                            <li>13、React大众点评开发 （准备中...）</li>
-                            <li>14、React Native （准备中...）</li>
-                            <li>15、其他 （PHP、Three.js...）</li>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">个人介绍</div>
+                        <div className="panel-body">
+                          <p>本人个性随和，谦虚自律，勤奋好学，对工作认真负责，注重效率，有较强的团队合作意识。</p>
+                        </div>
+                        <ul className="list-group">
+                          <li className="list-group-item">熟悉 HTML/HTML5、CSS/CSS3、JavaScript、Jquery、BootStrap框架等前端 WEB 开发技术。</li>
+                          <li className="list-group-item">可以使用织梦、WordPress等构建网站，以及后台管理、专题制作。</li>
+                          <li className="list-group-item">熟悉H5移动页面制作，对于H5移动混合开发也有所了解。</li>
+                          <li className="list-group-item">对于Vue 2.0、git、NodeJS、Express、MongoDB、PHP、ReactJS、Angular、ionic2/3等皆有涉猎。</li>
+                          <li className="list-group-item">熟练使用Photoshop等软件。掌握Office 办公软件以及需求文档的编写。</li>
+                          <li className="list-group-item">平时热爱IT技术，经常登录慕课网、udemy、lynda、packt等进行相关课程学习。</li>
                         </ul>
+                      </div>
                     </div>
                 );
             }
@@ -95,11 +159,11 @@
                         <h1>个人主页</h1>
                         <ul className="header">
                             <li><IndexLink activeClassName="active" to="/">首页</IndexLink></li>
-                            <li><Link activeClassName="active" to="/works">作品</Link></li>
                             <li><Link activeClassName="active" to="/plan">项目</Link></li>
+                            <li><Link activeClassName="active" to="/mine">介绍</Link></li>
                         </ul>
                         <div className="content">
-                            {this.props.children}
+                          {this.props.children}
                         </div>
                     </div>
                 )
@@ -109,8 +173,8 @@
             <Router history={browserHistory}>
                 <Route path="/" component={App}>
                     <IndexRoute component={Home} />
-                    <Route path="works" component={Works} />
                     <Route path="plan" component={Plan} />
+                    <Route path="mine" component={Mine} />
                 </Route>
             </Router>,destination
         );
