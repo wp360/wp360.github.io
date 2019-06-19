@@ -1,188 +1,207 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  
+<html lang="zh-CN">
 
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="default">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人主页</title>
+  <script src="https://cdn.bootcss.com/react/15.2.1/react.min.js"></script>
+  <script src="https://cdn.bootcss.com/react/15.2.1/react-dom.min.js"></script>
+  <script src="https://cdn.bootcss.com/babel-core/5.8.35/browser.min.js"></script>
+  <script src="https://cdn.bootcss.com/react-router/2.8.0/ReactRouter.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--[if lte IE 8]>
+    <p class="browserupgrade">您的浏览器版本过低，不支持相关新特性, 请到 <a href="http://browsehappy.com/">这里</a> 更新, 以获取最佳的体验</p>
+    <![endif]-->
 </head>
-</html>
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/06/19/hello-world/" class="article-date">
-  <time datetime="2019-06-19T06:17:20.780Z" itemprop="datePublished">2019-06-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/06/19/hello-world/" data-id="cjx2valwr0000ac6xynrivhrc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/06/19/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
+  <div id="container"></div>
+  <script type="text/babel">
+    var {
+            Router,
+            Route,
+            IndexRoute,
+            IndexLink,
+            Link,
+            browserHistory
+        } = ReactRouter;
+        var destination = document.querySelector("#container");
+        var Home = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                        <h2>往期案例</h2>
+                        <div className="show-grid">
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>响应页面（PC页面）</h3>
+                            <p>    
+                              <a href="http://sz.xingjiezs.com/2016/topic/" class="thumbnail">
+                                苏州星杰响应式页面
+                              </a>
+                            </p>
+                            <p>相关技术：Bootstrap + JQuery + Ajax</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>日常活动（PC页面）</h3>
+                            <p>    
+                              <a href="http://nb.xingjiezs.com/2017/08/" class="thumbnail">
+                                墅无极——中国别墅装饰实景体验展（星杰宁波）
+                              </a>
+                            </p>
+                            <p>相关技术：Bootstrap + JQuery + 相关jq插件</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>专题页面（PC页面）</h3>
+                            <p>    
+                              <a href="http://sz.xingjiezs.com/2017/jdy/" class="thumbnail">
+                                金大元御珑宫廷——苏州星杰楼盘专题
+                              </a>
+                            </p>
+                            <p>相关技术：Bootstrap + JQuery + 相关jq插件</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>专题页面（PC页面）</h3>
+                            <p>    
+                              <a href="https://www.oldkids.cn/zt/2018/cygh/" class="thumbnail">
+                                九九关爱·重阳歌会
+                              </a>
+                            </p>
+                            <p>相关技术：JQuery + PHP</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>重阳歌会（移动页面）</h3>
+                            <div className="thumbnail">
+                               <img src="images/pic1.png" alt="重阳歌会二维码" />
+                            </div>
+                            <p>相关技术：JQuery + PHP</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>植物园抠图合影（移动页面）</h3>
+                            <div className="thumbnail">
+                               <img src="images/pic2.png" alt="植物园二维码" />
+                            </div>
+                            <p>相关技术：Vue + 第三方抠图API</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>微信报名（移动页面）</h3>
+                            <div className="thumbnail">
+                               <img src="images/01.png" alt="二维码" />
+                            </div>
+                            <p>相关技术：JQuery + Swiper</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>翻书效果（移动页面）</h3>
+                            <div className="thumbnail">
+                               <img src="images/02.png" alt="二维码" />
+                            </div>
+                            <p>相关技术：JQuery + 相关js插件</p>
+                          </div>
+                          <div className="col-sm-6 col-md-4">
+                            <br />
+                            <h3>网上投票（移动页面）</h3>
+                            <div className="thumbnail">
+                               <img src="images/03.png" alt="二维码" />
+                            </div>
+                            <p>相关技术：PHP + JQuery + Ajax</p>
+                          </div>
+                        </div>
+                        <h3>备注：</h3>
+                        <p>其中，有不少活动专题已经下线。近期使用Vue2.0开发的红包牛牛APP，由于还未上线。所以就不在此展示了。</p>
+                        <p>其他详见集团及各个分公司官网活动专题展示</p>
+                    </div>
+                );
+            }
+        });
+        var Plan = React.createClass({
+            render: function(){
+                return (
+                  <div>
+                    <div className="panel panel-default">
+                      <div className="panel-heading">项目开发</div>
+                      <ul className="list-group">
+                        <li className="list-group-item">Vue2.0-快餐店收银系统 （完成基础构建）<a href="https://github.com/wp360/VuePos" alt="快餐店收银系统" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">Vue 2.0应用开发实例 （完成部分）<a href="https://github.com/wp360/vueApp" alt="Vue 2.0应用开发实例" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">使用Vue.js 2.0 构建去购物网站（进行中...）<a href="https://github.com/wp360/vueMall" alt="Vue.js 2.0 构建去购物网站" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">WEEX （准备中...）</li>
+                        <li className="list-group-item">React入门与实战 （已完成）<a href="https://github.com/wp360/react-news" alt="React入门与实战" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">React-Redux CRUD （已完成）<a href="https://github.com/wp360/redux-crud" alt="React-Redux 增删改查" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">ES6彩票 （完成部分）<a href="https://github.com/wp360/es6" alt="ES6彩票" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">NodeJS仿亚马逊 （完成部分）<a href="https://github.com/wp360/ecommerce" alt="NodeJS仿亚马逊" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">Angular4 在线竞拍（完成部分）<a href="https://github.com/wp360/auction" alt="Angular4 在线竞拍" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">ionic & WooCommerce 构建购物商城APP（初始阶段）<a href="https://github.com/wp360/wooApp" alt="ionic商城app" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">React 构建Spotify App Demo （初始阶段）<a href="https://github.com/wp360/spotifyApp" alt="Spotify App" target="_blank" rel="nofollow">链接地址</a></li>
+                        <li className="list-group-item">手把手开发电商平台 （进行中...）</li>
+                        <li className="list-group-item">React大众点评开发 （准备中...）</li>
+                        <li className="list-group-item">React Native （准备中...）</li>
+                        <li className="list-group-item">其他 （ThinkPHP、Three.js...）</li>
+                      </ul>
+                    </div>
+                  </div>
+                );
+            }
+        });
+        var Mine = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                      <div className="panel panel-default">
+                        <div className="panel-heading">个人介绍</div>
+                        <div className="panel-body">
+                          <p>本人个性随和，谦虚自律，勤奋好学，对工作认真负责，注重效率，有较强的团队合作意识。</p>
+                        </div>
+                        <ul className="list-group">
+                          <li className="list-group-item">熟悉 HTML/HTML5、CSS/CSS3、JavaScript、Jquery、BootStrap框架等前端 WEB 开发技术。</li>
+                          <li className="list-group-item">可以使用织梦、WordPress等构建网站，以及后台管理、专题制作。</li>
+                          <li className="list-group-item">熟悉H5移动页面制作，对于H5移动混合开发也有所了解。</li>
+                          <li className="list-group-item">对于Vue 2.0、git、NodeJS、Express、MongoDB、PHP、ReactJS、Angular、ionic2/3等皆有涉猎。</li>
+                          <li className="list-group-item">熟练使用Photoshop等软件。掌握Office 办公软件以及需求文档的编写。</li>
+                          <li className="list-group-item">平时热爱IT技术，经常登录慕课网、udemy、lynda、packt等进行相关课程学习。</li>
+                        </ul>
+                      </div>
+                    </div>
+                );
+            }
+        });
+        var App = React.createClass({
+            render: function(){
+                return (
+                    <div>
+                        <h1>个人主页</h1>
+                        <ul className="header">
+                            <li><IndexLink activeClassName="active" to="/">首页</IndexLink></li>
+                            <li><Link activeClassName="active" to="/plan">项目</Link></li>
+                            <li><Link activeClassName="active" to="/mine">介绍</Link></li>
+                        </ul>
+                        <div className="content">
+                          {this.props.children}
+                        </div>
+                    </div>
+                )
+            }
+        });
+        ReactDOM.render(
+            <Router history={browserHistory}>
+                <Route path="/" component={App}>
+                    <IndexRoute component={Home} />
+                    <Route path="plan" component={Plan} />
+                    <Route path="mine" component={Mine} />
+                </Route>
+            </Router>,destination
+        );
+    </script>
 </body>
+
 </html>
